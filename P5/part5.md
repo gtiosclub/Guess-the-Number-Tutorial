@@ -21,7 +21,11 @@ func validateGuess(guess: Int) {
     }
 }
 ```   
-As you can see, `guessLabel` will now show "Higher! ⬆️" or "Lower! ⬇️", depending on the player's input.
+As you can see, `guessLabel` will now show "Higher! ⬆️" or "Lower! ⬇️", depending on the player's input. When you run your app and play, you will see something like this:
+
+<p align="center"> <img src="/images/higher.png" align="center"> </p>
+
+<p align="center"> <img src="/images/lower.png" align="center"> </p>
 
 ### UIAlertController
 
