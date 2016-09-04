@@ -1,6 +1,6 @@
 ## Part 5: Adding Alerts!
 
-Our app is almost done. You can already play and enter guesses until you get the right number. However, you can't really see if you've won or if your guess is too high or too low. In this part of the tutorial, we will be adding some alerts, as well as updating our `guessLabel` to notify the player on the state of the game.
+Our app is almost done. You can already play and enter guesses until you get the right number. However, you can't really see if you've won or if your guess is too high or too low. In this part of the tutorial, we will be adding some alerts, as well as updating our `guessLabel`, to notify the player on the state of the game.
 
 ### guessLabel
 

@@ -1,50 +1,23 @@
 ## Part 6: Finishing Up
 
-Now that you're done, you can push your changes to github!
+Now that you're done, you can push your changes to GitHub!
 
-Open up your terminal and navigate into the `Calculator-Template` folder using `cd`.
+Github is a platform to easily save your code onto a cloud where you can track the changes you've made over time. It also allows others to see and contribute to your open source code. If you haven't done so yet:
 
-First we're going to type:
-```
-git status
-```
+1. Sign up for an account at [Github](https://www.github.com)
+2. Set up your github [SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
 
-This command tell you the changes you made to your local repository compared to the last commit that you've made.
+Once you're set up, log into [Github](https://www.github.com) and create a new repository by pressing the "+" button on the top right corner, and then on "New repository," like on the image below:
 
-Now we want to add these changes to the "commit". The commit is a snapshot of your code that you **add** your changes to. Type in:
+<p align="center"> <img src="/images/newRepo.png" height="500" align="center"> </p>
 
-```
-git add --all
-```
+Type in your repository's name, "Guess the Number", and press "Create repository."
 
-This will add all of the changes that you've made to the commit so that you can save a snapshot of what your code looks like. Altnernatively you can add individual files by saying for example `git add ViewController.swift` to add individual files. The tag --all means that you want to add all of your changes.
+<p align="center"> <img src="/images/repoName.png" height="500" align="center"> </p>
 
-Type `git status` again. You should see that all of your files are in green. This means that you changes are ready to be commited as a snapshot. If you wanted to remove all the changes that you added, you would type `git reset`, but don't do that now.
+You will now be taken to your repository's page. Open up your terminal and navigate into the `Guess The Number` folder using `cd`. Follow the instructions for "...or create a new repository on the command line" to push your code.
 
-Go ahead and commit your changes.
-
-```
-git commit -m "Completed Guess the Number game"
-```
-
-This saves a snapshot to your local repository. If you so wish to, you can revert commits and go back to a previous commit using `git revert`.
-
-Finally, we want to sync up your local repository with the remote repository hosted on github.
-
-```
-git push origin master
-```
-
-Technically you can use `git push` and it should work as well. "origin" is the name of the remote repository and "master" is the name of the branch you're committing to. Typically you want your master to have the working copy of your program.
-
-In other words, you want to follow these specific order of commands in order to save your code to github.
-
-```
-git status
-git add --all
-git commit -m "some message that says what progress you've made"
-git push origin master
-```
+<p align="center"> <img src="/images/pushCode.png" height="500" align="center"> </p>
 
 Once you've pushed your code, you're done!
 
