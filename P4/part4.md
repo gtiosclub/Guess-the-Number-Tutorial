@@ -27,7 +27,7 @@ Great! So now we know which number was entered. Let's now check if it is the win
 
 ## validateGuess
 
-Now that we are able to get the player's input from the `UITextField`, we want to check if the player made the right guess, or if the number was out of our bounds (1-100 inclusive). For this, we will write a function called `validateGuess` which will have one argument, an Int. We want to check 4 things: if the number is out of bounds, if the number is smaller than the number to guess, if the number is bigger than the number to guess, or if the number IS the number to guess.
+Now that we are able to get the player's input from the `UITextField`, we want to check if the player made the right guess, or if the number was out of our bounds (1-100 inclusive). For this, we will write a function called `validateGuess` which will have one argument, an `Int`. We want to check 4 things: if the number is out of bounds, if the number is smaller than the number to guess, if the number is bigger than the number to guess, or if the number IS the number to guess.
 
 ```swift
 func validateGuess(guess: Int) {
