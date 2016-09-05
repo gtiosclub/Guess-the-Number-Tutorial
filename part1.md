@@ -1,4 +1,4 @@
-## Part 1: Create new project
+## Part 1: Getting Started
 
 This tutorial will teach you how to build a Guess the Number game through the use of Interface builder and Storyboards!
 

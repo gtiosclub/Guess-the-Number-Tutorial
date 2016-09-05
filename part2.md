@@ -1,4 +1,4 @@
-## Part 2: Set up screen layout for Guess the Number game
+## Part 2: Setting up your View
 
 **Interface builder** is Xcode's GUI editor. For most projects, the interface is contained in the `Main.storyboard` file. Open it up and have a look around:
 
@@ -19,9 +19,9 @@ Now, for this Guess the Number game, there are 3 parts in the interface we're bu
 
 Let's start building the screen!
 
-### You're a label, Harry
+### You're a label, 'arry
 
-In order to display the title of the game, we are going to work with the Interface builder and the UI Palette. Go ahead to the UI Palette and scroll until you find `Label`:
+In order to display the title of the game, we are going to work with the Interface builder and the UI Palette. Scroll through the UI Palette until you find `Label`:
 
 <p align="center"> <img src="/images/uiPalette.png" align="center"> </p>
 
@@ -33,9 +33,9 @@ Voila! There is a label now on your screen! You can actually customize the label
 
 <p align="center"> <img src="/images/editLabel.png" align="center"> </p>
 
-Here at the Attributes tab, you can edit the text of your label, the color, the font, the size, and many more! For this tutorial, why don't you edit the text of the label so that it reads `Guess the Number`.
+Here at the Attributes tab, you can edit the text of your label, the color, the font, the size, and many more! For this tutorial, edit the text of the label so that it reads `Guess the Number`.
 
-Now, in order to actually input a guess, you will need a `UI Textfield`, and you will also need a `UI Button` in order to submit your guess. Go ahead to the UI Palette again and drag a button and text field to your screen. Also edit the textfield and the button in any way you want. For this tutorial, edit all the features in the view so that it looks like this:
+Now, in order to actually input a guess, you will need a `UI Textfield`, and you will also need a `UI Button` in order to submit your guess. From the UI Palette, drag a button and text field to your screen. Also edit the textfield and the button in any way you want. For this tutorial, edit all the features in the view so that it looks like this:
 
 <p align="center"> <img src="/images/finalLayout.png" align="center"> </p>
 
@@ -47,7 +47,7 @@ In order to provide functionality to the app, there must be a way to connect the
 
 <p align="center"> <img src="/images/twoScreen.png" align="center"> </p>
 
-Now, let's start with linking the label in our ViewController to the actual Swift code. In order to do this, you click on the label, control-click on it, and drag the blue line that appears to the swift file:
+Now, let's start with linking the label in our ViewController to the actual Swift code. In order to do this, you click on the label, **control-click-hold** on it, and drag your mouse to the swift file. A blue line should appear. Insert your `IBOutlet` right above the `viewDidLoad()` function like so:
 
 <p align="center"> <img src="/images/linkage.png" align="center"> </p>
 
@@ -59,7 +59,7 @@ With this screen, you can specify what type of connection you'll make between th
 
 <p align="center"> <img src="/images/guessLabel.png" align="center"> </p>
 
-Go ahead and do the same linking process to the text field in the view, and name that connection `guessTextField`. Within the Attributes tab for this text field though, scroll until you find `Keyboard Type` and change it to `Number Pad`. This will only allow numbers to be inputted into the text field.
+Do the same linking process to the text field in the view, and name that connection `guessTextField`. Then go to the  **Attributes tab** for the text field and scroll until you find `Keyboard Type`. Change it to `Number Pad`. This will only allow numbers to be inputted into the text field.
 
 ### Next Time
 

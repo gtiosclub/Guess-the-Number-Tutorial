@@ -9,6 +9,7 @@ Up to this point, our `submitButtonPressed` function looks like this:
 ```swift
 @IBAction func submitButtonPressed(sender: UIButton) {
     generateRandomNumber()
+    print("\(numberToGuess)")
 }
 ```
 Let's change it so that when "Submit" is pressed, we can access the number that was entered. We already have an `IBOutlet` to our `UITextField` called `guessTextField`. Now all we need to do is get its text.
@@ -46,7 +47,7 @@ func validateGuess(guess: Int) {
 ```
 ## One more thing
 
-We have our `validateGuess` function ready, now all we need to do is call it every time "Submit" is pressed.
+We have our `validateGuess` function ready, now all we need to do is call it every time "Submit" is pressed. Replace the print call with `validateGuess(guessInt)`
 
 ```swift
 @IBAction func submitButtonPressed(sender: UIButton) {
@@ -58,6 +59,8 @@ We have our `validateGuess` function ready, now all we need to do is call it eve
     }
 }
 ```
+
+Run your app and try it! Your console should output the proper messages based on your text field input when you press submit.
 
 ### Next Time
 The logic of our app looks great, but we need some way to notify the player that he or she has won, or that there is something wrong with their guess. We will do this by adding some alerts in part 5.
