@@ -1,4 +1,4 @@
-## Part 4: Writing the Logic
+## Part 4: Writing the Game Logic
 
 In the past three parts, we created our Xcode project and the interface for our game. Pressing the "Submit" button generates a random number, but that's not what we really want...In this part, we're going to write the logic of our game so we can know if a player made the right guess or not.
 
@@ -9,6 +9,7 @@ Up to this point, our `submitButtonPressed` function looks like this:
 ```swift
 @IBAction func submitButtonPressed(sender: UIButton) {
     generateRandomNumber()
+    print("\(numberToGuess)")
 }
 ```
 Let's change it so that when "Submit" is pressed, we can access the number that was entered. We already have an `IBOutlet` to our `UITextField` called `guessTextField`. Now all we need to do is get its text.
@@ -46,7 +47,7 @@ func validateGuess(guess: Int) {
 ```
 ## One more thing
 
-We have our `validateGuess` function ready, now all we need to do is call it every time "Submit" is pressed.
+We have our `validateGuess` function ready, now all we need to do is call it every time "Submit" is pressed. Replace the print call with `validateGuess(guessInt)`
 
 ```swift
 @IBAction func submitButtonPressed(sender: UIButton) {
@@ -59,5 +60,9 @@ We have our `validateGuess` function ready, now all we need to do is call it eve
 }
 ```
 
+Run your app and try it! Your console should output the proper messages based on your text field input when you press submit.
+
 ### Next Time
 The logic of our app looks great, but we need some way to notify the player that he or she has won, or that there is something wrong with their guess. We will do this by adding some alerts in part 5.
+
+Click here for <a href="#top" onclick="setGuessTheNumberTutorial(5)">Part 5</a>

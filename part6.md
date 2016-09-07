@@ -1,4 +1,4 @@
-## Part 6: Finishing Up
+## Part 6: Finishing Up (Github)
 
 Now that you're done, you can push your changes to GitHub!
 
@@ -9,17 +9,27 @@ Github is a platform to easily save your code onto a cloud where you can track t
 
 Once you're set up, log into [Github](https://www.github.com) and create a new repository by pressing the "+" button on the top right corner, and then on "New repository," like on the image below:
 
-<p align="center"> <img src="/images/newRepo.png" height="500" align="center"> </p>
+<p align="center"> <img src="/assets/guessthenumber/newRepo.png" align="center" style="max-width=75%"> </p>
 
 Type in your repository's name, "Guess the Number", and press "Create repository."
 
-<p align="center"> <img src="/images/repoName.png" height="500" align="center"> </p>
+<p align="center"> <img src="/assets/guessthenumber/repoName.png" align="center" style="max-width=75%"> </p>
 
 You will now be taken to your repository's page. Open up your terminal and navigate into the `Guess The Number` folder using `cd`. Follow the instructions for "...or create a new repository on the command line" to push your code.
 
-<p align="center"> <img src="/images/pushCode.png" height="500" align="center"> </p>
+<p align="center"> <img src="/assets/guessthenumber/pushCode.png" align="center" style="max-width=75%"> </p>
 
 Once you've pushed your code, you're done!
 
 ### Recap
 You created your very first iOS app, congrats!
+
+What you learned:
+- How to create a project
+- How to link IBOutlets and IBActions
+- How to generate random numbers
+- How to create UIAlertControllers
+
+If you have any feedback for this tutorial, contact us at iosgatech@gmail.com.
+
+If you love or hate this tutorial, send us funny stuff. We'll take your dankest memes.
