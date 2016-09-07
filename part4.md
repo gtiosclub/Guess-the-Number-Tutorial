@@ -1,4 +1,4 @@
-## Part 4: Writing the Logic
+## Part 4: Writing the Game Logic
 
 In the past three parts, we created our Xcode project and the interface for our game. Pressing the "Submit" button generates a random number, but that's not what we really want...In this part, we're going to write the logic of our game so we can know if a player made the right guess or not.
 
@@ -64,3 +64,5 @@ Run your app and try it! Your console should output the proper messages based on
 
 ### Next Time
 The logic of our app looks great, but we need some way to notify the player that he or she has won, or that there is something wrong with their guess. We will do this by adding some alerts in part 5.
+
+Click here for <a href="#top" onclick="setGuessTheNumberTutorial(5)">Part 5</a>
