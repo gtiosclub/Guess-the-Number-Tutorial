@@ -7,7 +7,7 @@ Our app is almost done. You can already play and enter guesses until you get the
 First, we want to make sure that our `guessLabel` changes when the player's guess is higher or lower than the number to guess. If the player's guess is higher, we'll ask for a lower number, and vice versa. Update your `validateGuess` function to look like this:
 
 ```swift
-func validateGuess(_guess: Int) {
+func validateGuess(_ guess: Int) {
     if guess < lowerBound || guess > upperBound {
         print("Your guess should be between 1 and 100!")
     } else if guess < numberToGuess {
@@ -65,7 +65,7 @@ showWinAlert()
 As you can see, your win alert message also lets players know how many guesses they made until they got the right number. Your final `validateGuess` function will look like this:
 
 ```swift
-func validateGuess(_guess: Int) {
+func validateGuess(_ guess: Int) {
     if guess < lowerBound || guess > upperBound {
         showBoundsAlert()
     } else if guess < numberToGuess {
